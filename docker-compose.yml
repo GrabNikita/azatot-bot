@@ -1,8 +1,23 @@
 services:
-  telegram:
+  telegram-bot:
     build: .
     container_name: telegram-bot
     env_file:
       - .env
     ports:
-      - "8080:80"
+      - "8090:80"
+    external_links:
+      - telegram-bot-external-service
+    environment:
+      TELEGRAM_BOT_EXTERNAL_SERVICE_HOST: telegram-bot-external-service
+  telegram-bot-external-service:
+    build: ./external-system
+    container_name: telegram-bot-external-service
+    env_file:
+      - external-system/.env
+    ports:
+      - "8091:80"
+    external_links:
+      - telegram-bot
+    environment:
+      TELEGRAM_BOT_HOST: telegram-bot

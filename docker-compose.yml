@@ -1,7 +1,7 @@
 services:
   telegram:
-    build: ./telegram
-    container_name: arathorn-fagwyn-bot-telegram
+    build: .
+    container_name: arathorn-fagwyn-bot
     env_file:
       - .env
     ports:

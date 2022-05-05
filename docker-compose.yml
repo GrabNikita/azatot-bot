@@ -1,16 +1,4 @@
 services:
-#  bot:
-#    build: ./bot
-#    container_name:  arathorn-fagwyn-bot
-#    env_file:
-#      - .env
-#  api:
-#    build: ./api
-#    container_name: arathorn-fagwyn-bot-api
-#    env_file:
-#      - .env
-#    ports:
-#      - "8080:80"
   telegram:
     build: ./telegram
     container_name: arathorn-fagwyn-bot-telegram

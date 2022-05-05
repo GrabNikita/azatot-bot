@@ -1,0 +1,24 @@
+{
+  "name": "arathorn-fagwyn-bot",
+  "version": "1.0.0",
+  "description": "simple telegram bot",
+  "main": "../api/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "bot",
+    "node",
+    "telegram",
+    "bot"
+  ],
+  "author": "Nikita Grab",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "telegraf": "^4.8.1"
+  }
+}

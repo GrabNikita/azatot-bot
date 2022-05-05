@@ -11,7 +11,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 
 app.get('/', (req, res) => {
 	res.send('Hello World!');
-	bot.telegram.sendMessage(826060510, 'I see you...');
+	bot.telegram.sendMessage(process.env.TEST_CHAT_ID, 'I see you...');
 });
 
 app.listen(port, host,() => {

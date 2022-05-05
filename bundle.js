@@ -1,2 +1,2 @@
 import './bot.js';
-import './server.js';
+import './api.js';

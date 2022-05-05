@@ -1,7 +1,7 @@
 {
-	"name": "arathorn-fagwyn-bot-api",
+	"name": "telegram-bot",
 	"version": "1.0.0",
-	"description": "simple api for send notifications to telegram bot",
+	"description": "simple api for send notifications to telegram",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {

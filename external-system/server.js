@@ -26,6 +26,13 @@ app.get('/send-message', (request, response) => {
 	response.send('OK');
 });
 
+app.get('/entity-list', (request, response) => {
+	response.send(JSON.stringify([
+		{id: 1, number: '000001', date: 1280000000},
+		{id: 2, number: '000002', date: 2560000000},
+	]));
+});
+
 app.listen(port, host, () => {
 	console.log(`External service listening on ${host}:${port}`);
 });
